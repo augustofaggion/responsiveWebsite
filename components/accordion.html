@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,600;1,600&family=Work+Sans:ital,wght@0,300;0,500;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+      /* Main color :#087f5b*/
+      /* Grey color: #343a40 */
+:root{
+  --col-1: #087f5b;
+  --col-2: #343a40;
+  --col-3: #868e96;
+}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+      }
+      .item{}
+      .number, .text{
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--col-1);
+      }
+      .text{
+      }
+
+      .icon{
+        width: 24px;
+        height: 24px;
+        stroke: var(--col-1);
+      }
+
+      .hidden--box p{
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .hidden--box ul{
+        color: var(--col-3);
+        margin-left: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="number">02</p>
+        <p class="text">How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden--box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, non
+            consectetur aspernatur similique officiis tempora voluptatum fugiat
+            iste voluptatibus amet, atque commodi! Ducimus suscipit quaerat
+            quibusdam unde illo corporis!
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque assumenda </li>
+              <li>Officia doloremque quibusdam ex, eum harum reprehenderit, expedita incidunt ea? </li>
+              <li>Nostrum recusandae atque nemo sint incidunt, inventore minima similique?</li>
+              <li>Nostrum recusandae atque nemo sint incidunt, inventore minima similique?</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
