@@ -32,6 +32,7 @@ primary: #e67e22
 html {
   font-size: 62.5%;
   /* to use this 62.5 % == 10px / 16 px = 0.625 = 62.5% use this trick to have a more responsive design */
+  overflow-x: hidden;
 }
 
 body {
@@ -39,6 +40,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing abosuluted positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /* Components */
