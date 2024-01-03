@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Omnifood is AI powered food subscription, that will make you eat healthier again 365 days. It's tailored for your nutrion adn health.">
+    <link rel="icon" href="./img/favicon_copy.png">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +19,7 @@
     <link rel="stylesheet" href="./css/queries.css">
 
     
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -83,11 +88,15 @@
             </div>
           </div>
           <div class="hero--img--box">
-            <img
-              src="./img/hero.png"
-              alt="Woman enjoy food, meals in storage container, and food bowls on a table"
-              class="hero--img"
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="img/webp">
+              <source srcset="img/hero.png" type="img/png">
+              <img
+                src="./img/hero.png"
+                alt="Woman enjoy food, meals in storage container, and food bowls on a table"
+                class="hero--img"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -499,17 +508,17 @@
               <form action="" class="cta-form">
                 <div>
                   <label for="full-name">Full Name</label>
-                  <input id="full-name" type="text" placeholder="John Smith" required>
+                  <input id="full-name" type="text" placeholder="John Smith" name="full-name" required>
                 </div>
                 
                 <div>
                   <label for="email">Email Adress</label>
-                  <input id="email" type="email" placeholder="me@gmail.com" required>
+                  <input id="email" type="email" placeholder="me@gmail.com" name="email" required>
                 </div>
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select  name="" id="select-where" required>
+                  <select  name="" id="select-where" name="select-where" required>
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">Youtube</option>
